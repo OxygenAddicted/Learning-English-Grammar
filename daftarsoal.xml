@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Jun 14, 2022 at 09:08 AM
+- Server version: 10.4.19-MariaDB
+- PHP Version: 8.0.7
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="dbsoal" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="daftarsoal">
+                CREATE TABLE `daftarsoal` (
+                  `no` int(2) NOT NULL,
+                  `pertanyaan` varchar(150) NOT NULL,
+                  `opsiA` varchar(22) NOT NULL,
+                  `opsiB` varchar(22) NOT NULL,
+                  `opsiC` varchar(22) NOT NULL,
+                  `opsiD` varchar(22) NOT NULL,
+                  `jawaban` varchar(22) NOT NULL,
+                  `status` int(1) NOT NULL,
+                  PRIMARY KEY (`no`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'dbsoal'
+    -->
+    <database name="dbsoal">
+        <!-- Table daftarsoal -->
+        <table name="daftarsoal">
+            <column name="no">1</column>
+            <column name="pertanyaan">Rudi’s professor had him _____ his thesis many times before allowing him to present it to the committee.</column>
+            <column name="opsiA">to write</column>
+            <column name="opsiB">writing</column>
+            <column name="opsiC">write</column>
+            <column name="opsiD">written</column>
+            <column name="jawaban">write</column>
+            <column name="status">0</column>
+        </table>
+        <table name="daftarsoal">
+            <column name="no">2</column>
+            <column name="pertanyaan">_____ Irma’s fear of heights, she decided to play roller coaster with a group of her classmates to Dufan Ancol during the holiday.</column>
+            <column name="opsiA">Because</column>
+            <column name="opsiB">In spite of</column>
+            <column name="opsiC">Although</column>
+            <column name="opsiD">Even though</column>
+            <column name="jawaban">In spite of</column>
+            <column name="status">0</column>
+        </table>
+        <table name="daftarsoal">
+            <column name="no">3</column>
+            <column name="pertanyaan">Budi spent _____ an enjoyable vacation in Bali this holiday that he plans to return as soon as he saves money.</column>
+            <column name="opsiA">such</column>
+            <column name="opsiB">very</column>
+            <column name="opsiC">so</column>
+            <column name="opsiD">such as</column>
+            <column name="jawaban">such</column>
+            <column name="status">0</column>
+        </table>
+    </database>
+</pma_xml_export>
